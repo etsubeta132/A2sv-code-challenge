@@ -1,0 +1,11 @@
+def gradingStudents(grades):
+    newgrade_list =[]
+    for grade in grades:
+        if grade < 38:
+            grade = grade
+        else:
+            for i in range(grade,grade+3):
+                if i % 5 == 0 and (i - grade) < 3:
+                    grade = i
+        newgrade_list.append(grade)
+    return newgrade_list
