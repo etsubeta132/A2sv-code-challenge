@@ -1,0 +1,17 @@
+# The function accepts following parameters:
+#  1. INTEGER n
+#  2. INTEGER_ARRAY arr
+#
+
+def insertionSort1(n, arr):
+    num = arr[-1]
+    j = n - 1
+    while j >= 0 and num < arr[j - 1]:
+        arr[j] = arr[j - 1]
+        for i in arr:
+            print(i, end=" ")
+        print("")
+        j -= 1
+    arr[j] = num
+    for i in arr:
+        print(i, end=" ")
