@@ -1,0 +1,6 @@
+def countingSort(arr):
+    
+    count_list = [0 for i in range(100)]
+    for j in arr:
+        count_list[j] += 1
+    return count_list
