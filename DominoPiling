@@ -1,0 +1,8 @@
+def Dominopiling():
+    num = input().split()
+    M = int(num[0])
+    N = int(num[1])
+    max_domino = int((M*N)/2)
+    return max_domino
+
+print(Dominopiling())
