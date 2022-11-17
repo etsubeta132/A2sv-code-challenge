@@ -1,0 +1,9 @@
+class Solution(object):
+    def targetIndices(self, nums, target):
+        nums.sort()
+        target_list = []
+        for i in nums:
+            if i == target:
+                target_list.append(nums.index(i))
+                nums[nums.index(i)] = " "
+        return target_list
