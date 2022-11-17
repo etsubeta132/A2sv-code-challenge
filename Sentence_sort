@@ -1,0 +1,12 @@
+class Solution(object):
+    def sortSentence(self, s):
+        unorderedList = s.split()
+        orderedList = ["" for _ in unorderedList]
+        for word in unorderedList:
+            word_list = [i for i in word] 
+            num = int(word_list[-1])
+            word_list.remove(word_list[-1])
+            new_word ="".join(word_list)
+            orderedList[num-1]=new_word
+        new_senetence = " ".join(orderedList)
+        return new_senetence
