@@ -1,0 +1,17 @@
+class Solution: 
+    def select(self, arr, i):
+        # code here
+        min_num = min(arr[i:])
+        return min_num
+    
+    def selectionSort(self, arr,n):
+        #code here
+
+        n = len(arr)
+        for i in range(0, n-1):
+            min_value = i
+            for j in range(i + 1, n):
+                if arr[j] < arr[min_value]:
+                    min_value = j
+        
+            arr[i], arr[min_value] = arr[min_value], arr[i]
